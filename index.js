@@ -10,6 +10,10 @@ app.get("/me", (req, res) => {
   res.send("Hi I am Laith");
 });
 
-app.listen(5000, () => {
+app.get("/health", (req, res) => {
+  res.send("Health is Good...!");
+});
+
+app.listen(80, () => {
   console.log("listening");
 });

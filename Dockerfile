@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM --platform=linux/amd64 node:lts-alpine
 
 WORKDIR /app
 
@@ -8,6 +8,6 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 5000
+EXPOSE 80
 
 CMD [ "node", "index.js" ]
