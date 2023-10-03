@@ -9,6 +9,9 @@ app.get("/", (req, res) => {
 app.get("/me", (req, res) => {
   res.send("Hi I am Laith");
 });
+app.get("/home", (req, res) => {
+  res.send("<h3>Welcome to ECS to FARGET..!</h3>");
+});
 
 app.get("/health", (req, res) => {
   res.send("Health is Good.....!");
