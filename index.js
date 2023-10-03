@@ -11,7 +11,7 @@ app.get("/me", (req, res) => {
 });
 
 app.get("/health", (req, res) => {
-  res.send("Health is Good...!");
+  res.send("Health is Good.....!");
 });
 
 app.listen(5000, () => {
